@@ -70,7 +70,7 @@ const NumberBaseball = () => {
             <ul>
                 {tries.map( (v, i) => {      /* React에서 반복문은 map 사용  */
                     return (
-                        <Try key={`${i + 1}차 시도 : `} tryInfo={v} />
+                        <Try key={`${i + 1}차 시도 : `} tryInfo={v} />      /* key는 무조건 있어야됨 */
                     );
                 })}
             </ul>
