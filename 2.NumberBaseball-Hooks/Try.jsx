@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 
-const Try = memo(({ tryInfo }) => { // Hooks에서는 memo가, class에서의 PureComponent역할 
+const Try = memo(({ tryInfo }) => { // 함수 컴포넌트 에서는 memo가, class에서의 PureComponent역할 
+                                    // memo처럼 컴포넌트를 감싸는 것들을 high order component(hoc)라고 부름. 
     return (
         <li>
             <div>{tryInfo.try}</div>
